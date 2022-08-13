@@ -1,15 +1,18 @@
 "use strict";
-exports.__esModule = true;
-var Person_1 = require("./Person");
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const Person_1 = __importDefault(require("./Person"));
 // console.log(num);
-console.log(Person_1["default"].name);
-console.log(Person_1["default"].role);
+console.log(Person_1.default.name);
+console.log(Person_1.default.role);
 function add(a, b) {
     return a + b;
 }
-var num1 = '1';
-var num2 = 2.5;
-var result = add(num1, num2);
+const num1 = '1';
+const num2 = 2.5;
+const result = add(num1, num2);
 console.log(result);
 // union type
 function combine(a, b) {
@@ -20,16 +23,16 @@ function combine(a, b) {
         return a.toString() + ' ' + b.toString();
     }
 }
-var combinedNums = combine(10, 15);
+const combinedNums = combine(10, 15);
 printResult(combinedNums);
-var combinedNames = combine('Takahiro', 'Kanki');
+const combinedNames = combine('Takahiro', 'Kanki');
 printResult(combinedNames);
 function printResult(msg) {
     console.log(new Date() + ': ' + msg.toString());
 }
 // unknown type
-var userInput;
-var userName;
+let userInput;
+let userName;
 userInput = 1;
 userInput = 'Sithu';
 if (typeof userInput === 'string') {

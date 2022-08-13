@@ -4,7 +4,7 @@ import person from './Person';
 console.log(person.name);
 console.log(person.role);
 
-function add(a, b) {
+function add(a: any, b: any) {
     return a + b;
 }
 
