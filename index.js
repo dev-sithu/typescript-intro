@@ -42,5 +42,5 @@ if (typeof userInput === 'string') {
 function generateError(message, code) {
     throw { message: message, erroCode: code };
 }
-generateError('An error occurred!', 500);
-console.log(userName);
+// generateError('An error occurred!', 500);
+// console.log(userName);
