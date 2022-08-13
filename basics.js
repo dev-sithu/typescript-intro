@@ -1,5 +1,5 @@
 "use strict";
 (function () {
-    let username = "Sithu";
+    var username = "Sithu";
     console.log("Hello ".concat(username));
 })();
