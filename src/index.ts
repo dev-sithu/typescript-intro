@@ -1,8 +1,8 @@
 import person from './Person';
 
-// console.log(num);
 console.log(person.name);
 console.log(person.role);
+console.log(person.group);
 
 function add(a: any, b: any) {
     return a + b;
