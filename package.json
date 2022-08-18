@@ -4,12 +4,13 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "lite-server",
+    "start": "concurrently \"tsc -w\" \"lite-server\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sithu",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^7.3.0",
     "lite-server": "^2.6.1"
   }
 }
